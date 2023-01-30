@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit/Debit Wallet</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="main-container">
+    <h1>Credit/Debit Wallet</h1>
+    <div id="balance-container">
+        <h2>Current Balance:</h2>
+        <p id="balance"></p>
+    </div>
+    <div id="add-money-container">
+        <h2>Add Money:</h2>
+        <form>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount">
+            <input type="button" value="Add" onclick="addMoney()">
+        </form>
+    </div>
+    <div id="withdraw-money-container">
+        <h2>Withdraw Money:</h2>
+        <form>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount">
+            <input type="button" value="Withdraw" onclick="withdrawMoney()">
+        </form>
+    </div>
+    <div id="transaction-history-container">
+        <h2>Transaction History:</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Transaction Type</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody id="transaction-history-table-body">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
